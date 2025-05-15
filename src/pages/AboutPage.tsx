@@ -11,7 +11,7 @@ const AboutPage = () => {
       <main className="flex-grow pt-24">
         <div className="container py-12">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About MarketMinds</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About MarketMinds IT Solutions</h1>
             <p className="text-lg text-foreground/70">
               Learn about our mission, our team, and our approach to building innovative software solutions.
             </p>
@@ -25,7 +25,7 @@ const AboutPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                 <p className="text-lg text-foreground/70 mb-6">
-                  At MarketMinds Software, we believe in harnessing the power of technology to solve complex business problems. Our mission is to deliver innovative software solutions that provide measurable value and drive sustainable growth for our clients.
+                  At MarketMinds IT Solutions, we believe in harnessing the power of technology to solve complex business problems. Our mission is to deliver innovative software solutions that provide measurable value and drive sustainable growth for our clients.
                 </p>
                 <p className="text-lg text-foreground/70">
                   We combine technical excellence with market intelligence to create solutions that not only meet current needs but anticipate future challenges in an ever-evolving digital landscape.

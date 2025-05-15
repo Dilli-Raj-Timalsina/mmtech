@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '100ms'}}>
-            MarketMinds delivers cutting-edge software development, data analytics, and market intelligence 
+            MarketMinds IT Solutions delivers cutting-edge software development, data analytics, and market intelligence 
             solutions that drive innovation and transform your business.
           </p>
           

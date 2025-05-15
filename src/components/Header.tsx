@@ -39,7 +39,7 @@ const Header = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="font-bold text-white">MM</span>
             </div>
-            <span className="font-bold text-xl">MarketMinds</span>
+            <span className="font-bold text-xl">MarketMinds IT Solutions</span>
           </Link>
         </div>
 

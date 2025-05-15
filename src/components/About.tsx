@@ -34,10 +34,10 @@ const About = () => {
           
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              About <span className="gradient-text">TechNex</span>
+              About <span className="gradient-text">MarketMinds IT Solutions</span>
             </h2>
             <p className="text-foreground/80 mb-6">
-              Founded in 2008, TechNex has been at the forefront of technological innovation, 
+              Founded in 2008, MarketMinds IT Solutions has been at the forefront of technological innovation, 
               helping businesses across industries harness the power of technology to drive growth, 
               efficiency, and competitive advantage.
             </p>

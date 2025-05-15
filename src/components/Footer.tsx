@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,9 +11,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="font-bold text-white">IT</span>
+                <span className="font-bold text-white">MM</span>
               </div>
-              <span className="font-bold text-xl">TechNex</span>
+              <span className="font-bold text-xl">MarketMinds IT Solutions</span>
             </div>
             <p className="text-foreground/70 mb-4">
               Delivering innovative IT solutions that drive business growth and digital transformation.
@@ -91,7 +90,7 @@ const Footer = () => {
         
         <div className="border-t border-border py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-foreground/70">
-            © 2025 TechNex. All rights reserved.
+            © 2025 MarketMinds IT Solutions. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-sm text-foreground/70 hover:text-primary">

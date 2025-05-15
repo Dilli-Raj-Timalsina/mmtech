@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -51,8 +50,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium mb-1">Email Us</h4>
                     <p className="text-foreground/70">
-                      info@technex.com<br />
-                      support@technex.com
+                      info@marketmindsit.com<br />
+                      support@marketmindsit.com
                     </p>
                   </div>
                 </div>

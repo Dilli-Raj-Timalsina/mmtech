@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# Stellar Web Vistas
 
-## Project info
+A modern, visually appealing website built with React, Vite, and Tailwind CSS. This project features interactive animations, smooth cursor effects, and clean section dividers.
 
-**URL**: https://lovable.dev/projects/625f232c-6558-45d7-8691-6b7e2288dec4
+## Features
 
-## How can I edit this code?
+- Custom cursor with smooth animations using Framer Motion
+- Interactive background dots that form clusters in key areas
+- Clean section dividers for improved visual structure
+- Responsive design with mobile optimizations
+- Modern color scheme with black, grey, white, and subtle purple/blue tones
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- React 18
+- Vite 5
+- Tailwind CSS
+- Framer Motion
+- Radix UI Components
+- TypeScript
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/625f232c-6558-45d7-8691-6b7e2288dec4) and start prompting.
+## Development
 
-Changes made via Lovable will be committed automatically to this repo.
+To run the project locally:
 
-**Use your preferred IDE**
+```bash
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Production Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To create a production build:
 
-**Use GitHub Codespaces**
+```bash
+# Build the project
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview the production build locally
+npm run preview
+```
 
-## What technologies are used for this project?
+## Deployment to Vercel
 
-This project is built with:
+This project is optimized for deployment on Vercel. Follow these steps to deploy:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push your code to a GitHub, GitLab, or Bitbucket repository
+2. Connect your repository to Vercel
+3. Set the following configuration:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install`
 
-## How can I deploy this project?
+The included `vercel.json` file handles proper routing for the single-page application.
 
-Simply open [Lovable](https://lovable.dev/projects/625f232c-6558-45d7-8691-6b7e2288dec4) and click on Share -> Publish.
+### Environment Variables
 
-## Can I connect a custom domain to my Lovable project?
+No environment variables are required for basic deployment. For custom configurations, you can add them in the Vercel dashboard.
 
-Yes, you can!
+## Troubleshooting
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you encounter any issues:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Ensure all dependencies are properly installed
+- Check that you're using Node.js 18 or later
+- For WebSocket connection issues during development, try using the HTTP protocol for HMR in `vite.config.ts`
+
+## License
+
+MIT

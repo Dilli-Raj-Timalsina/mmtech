@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -10,15 +9,32 @@ import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import BackgroundDots from "./components/BackgroundDots";
+import CustomCursor from "./components/CustomCursor";
 
 // Create a client
 const queryClient = new QueryClient();
 
 const App = () => {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: false,
+      mirror: true,
+      offset: 50,
+    });
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <BrowserRouter>
+          <BackgroundDots />
+          <CustomCursor />
           <Toaster />
           <Sonner />
           <Routes>

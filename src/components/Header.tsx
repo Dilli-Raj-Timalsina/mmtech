@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,20 +35,21 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="font-bold text-white">IT</span>
+              <span className="font-bold text-white">MM</span>
             </div>
-            <span className="font-bold text-xl">TechNex</span>
-          </a>
+            <span className="font-bold text-xl">MarketMinds</span>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="hover-lift text-foreground/80 hover:text-primary">Services</a>
-          <a href="#about" className="hover-lift text-foreground/80 hover:text-primary">About</a>
-          <a href="#testimonials" className="hover-lift text-foreground/80 hover:text-primary">Testimonials</a>
-          <a href="#contact" className="hover-lift text-foreground/80 hover:text-primary">Contact</a>
+          <Link to="/" className="hover-lift text-foreground/80 hover:text-primary">Home</Link>
+          <Link to="/services" className="hover-lift text-foreground/80 hover:text-primary">Services</Link>
+          <Link to="/portfolio" className="hover-lift text-foreground/80 hover:text-primary">Portfolio</Link>
+          <Link to="/about" className="hover-lift text-foreground/80 hover:text-primary">About</Link>
+          <Link to="/contact" className="hover-lift text-foreground/80 hover:text-primary">Contact</Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -73,10 +75,11 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-background border-t absolute top-full left-0 w-full py-4 shadow-lg animate-fade-in">
           <nav className="container flex flex-col space-y-4">
-            <a href="#services" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Services</a>
-            <a href="#about" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>About</a>
-            <a href="#testimonials" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Testimonials</a>
-            <a href="#contact" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Contact</a>
+            <Link to="/" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Home</Link>
+            <Link to="/services" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Services</Link>
+            <Link to="/portfolio" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Portfolio</Link>
+            <Link to="/about" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>About</Link>
+            <Link to="/contact" className="text-lg px-3 py-2 hover:bg-muted rounded-md" onClick={toggleMobileMenu}>Contact</Link>
             <div className="flex flex-col space-y-2 pt-2 border-t">
               <Button variant="outline" className="justify-center">
                 Log In
